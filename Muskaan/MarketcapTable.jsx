@@ -6,24 +6,20 @@ function TabsController() {
     const tabSections = document.querySelectorAll(".tab-section");
 
     function show(targetId) {
-      // Highlight the active button
       tabButtons.forEach(btn =>
         btn.classList.toggle("active", btn.dataset.target === targetId)
       );
 
-      // Show only the target section
+ 
       tabSections.forEach(sec =>
         sec.classList.toggle("hidden", sec.id !== targetId)
       );
     }
 
-    
-    // Default: show first button's section
     if (tabButtons.length > 0) {
       show(tabButtons[0].dataset.target);
     }
 
-    // Attach click listeners
     tabButtons.forEach(btn => {
       btn.addEventListener("click", e => {
         e.preventDefault();
@@ -32,18 +28,16 @@ function TabsController() {
       });
     });
 
-    // Cleanup on unmount
     return () => {
       tabButtons.forEach(btn => {
-        btn.replaceWith(btn.cloneNode(true)); // removes listeners
+        btn.replaceWith(btn.cloneNode(true)); 
       });
     };
   }, []);
 
-  return null; // only logic
+  return null; 
 }
 
-// Mount the controller
 const rootDivId = "tabs-controller-root";
 let rootEl = document.getElementById(rootDivId);
 if (!rootEl) {
@@ -52,3 +46,4 @@ if (!rootEl) {
   document.body.appendChild(rootEl);
 }
 ReactDOM.createRoot(rootEl).render(<TabsController />);
+
