@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple — UPtoSkill</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div id="root"></div>
+      <div class=" header-bar">
+        <div class="logo">
+          <img src="./src/assets/logo.png" alt="UPtoSkill"
+            onerror="this.src='https://dummyimage.com/120x32/0f172a/ffffff.png&text=UPtoSkill'">
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Global ranking</a></li>
+            <li><a href="#">Ranking by countries</a></li>
+            <li><a href="#">Ranking by categories</a></li>
+        </nav>
+      </div>
+
+
+
+
+      <!-- ===== Tabs ===== -->
+
+      <nav class="tab-nav">
+        <div class="tab-container">
+          <button class="tab-btn active" data-target="MarketCap">Market Cap</button>
+          <button class="tab-btn" data-target="Revenue">Revenue</button>
+          <button class="tab-btn" data-target="Earnings">Earnings</button>
+          <button class="tab-btn" data-target="PriceHistory">Price History</button>
+          <button class="tab-btn" data-target="PERatio">P/E ratio</button>
+          <button class="tab-btn" data-target="PSRatio">P/S ratio</button>
+
+          <!-- More -->
+          <div class="dropdown">
+            <button id="more-btn" class="tab-btn" data-target="more">More ▾</button>
+            <div class="dropdown-content" id="more-menu">
+              <a href="#" class="more-link" data-title="pbratio" data-body="Company profit details go here.">P/B
+                ratio</a>
+              <a href="#" class="more-link" data-title="operatingmarrgin"
+                data-body="Growth analysis details go here.">Operating margin</a>
+              <a href="#" class="more-link" data-title="eps" data-body="Dividend distribution details go here.">EPS</a>
+              <a href="#" class="more-link" data-title="stocksplits"
+                data-body="Dividend distribution details go here.">Stock Splits</a>
+              <a href="#" class="more-link" data-title="dividends"
+                data-body="Dividend distribution details go here.">Dividents</a>
+              <a href="#" class="more-link" data-title="dividendyield"
+                data-body="Dividend distribution details go here.">Divivend Yield</a>
+              <a href="#" class="more-link" data-title="sharesoutstanding"
+                data-body="Dividend distribution details go here.">Shares outstanding</a>
+              <a href="#" class="more-link" data-title="failstodeliver"
+                data-body="Dividend distribution details go here.">Fails to deliver</a>
+              <a href="#" class="more-link" data-title="costtoborrow"
+                data-body="Dividend distribution details go here.">Cost to borow</a>
+              <a href="#" class="more-link" data-title="totalassets"
+                data-body="Dividend distribution details go here.">Total assets</a>
+              <a href="#" class="more-link" data-title="totalliabilities"
+                data-body="Dividend distribution details go here.">Total libilities</a>
+              <a href="#" class="more-link" data-title="totaldebt"
+                data-body="Dividend distribution details go here.">Total debt</a>
+              <a href="#" class="more-link" data-title="cashonhand"
+                data-body="Dividend distribution details go here.">Cash on hand</a>
+              <a href="#" class="more-link" data-title="netassets"
+                data-body="Dividend distribution details go here.">Net assets</a>
+            </div>
+          </div>
+
+  </header>
+
+  <main class="container">
+
+    <!-- Market Cap -->
+    <section id="MarketCap" class="card tab-section">
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class=" hero-grid">
+          <!-- Left -->
+          <div class="hero-left">
+            <img class="apple" src=""
+              alt="Apple">
+            <div class="name">
+              <div class="title">Apple</div>
+              <div class="ticker">AAPL ⭐</div>
+              <div class="chips">
+                <span class="chip">👩‍💻 Tech</span>
+                <span class="chip">🧑‍💻 Software</span>
+                <span class="chip">🇺🇸 Dow Jones</span>
+                <span class="chip">💻 Tech Hardware</span>
+                <span class="chip">🔌 Electronics</span>
+                <span class="chip">🦾 AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="hero-middle">
+            <div class="hero-stat">
+              <div class="value">#1</div>
+              <div>Rank</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹19,095</div>
+              <div>Share price</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹286.840 T</div>
+              <div>Market cap</div>
+              <div class="delta-down">0.62%</div>
+              <div>Change (1 day)</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value">United States</div>
+              <div>Country</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">35.00%</div>
+              <div class="delta-up">Change (1 year)</div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="hero-right">
+            <b>Apple Inc.</b> is an American hardware and software developer and technology company that develops and
+            sells
+            computers, smartphones and consumer electronics as well as operating systems and application software. Apple
+            also operates internet sales portals for music, films and software.
+          </div>
+        </div>
+      </section>
+
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Market capitalization of Apple (AAPL)</h2>
+      <p class="lead">
+        <strong>Market cap:</strong>
+        <span class="highlight">₹286.840 Trillion</span>
+      </p>
+      <p>
+        As of March 2025, <strong>Apple</strong> has a market cap of <strong>₹286.840 Trillion</strong>. This makes
+        Apple
+        the world’s most valuable company by market cap according to our data. The market capitalization, commonly
+        called
+        market cap, is the total market value of a publicly traded company’s outstanding shares and is commonly used to
+        measure how much a company is worth.
+      </p>
+
+      <h3>Market cap history of Apple from 1996 to 2025</h3>
+      <img src="./src/assets/marketcap.png" alt="Market Cap Graph" class="tab-img">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of year Market Cap</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Marketcap</th>
+            <th>Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025</td>
+            <td>₹286.840 T</td>
+            <td>-13.45%</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>₹331.431 T</td>
+            <td>32.96%</td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>₹249.278 T</td>
+            <td>45.74%</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>₹171.039 T</td>
+            <td>-20.81%</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>₹215.972 T</td>
+            <td>30.9%</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>₹164.988 T</td>
+            <td>79.68%</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>₹91.823 T</td>
+            <td>76.02%</td>
+          </tr>
+          <tr>
+            <td>2018</td>
+            <td>₹52.167 T</td>
+            <td>-5.09%</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>₹54.968 T</td>
+            <td>32.83%</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>₹41.381 T</td>
+            <td>6.7%</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>₹38.783 T</td>
+            <td>-4.85%</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>₹40.759 T</td>
+            <td>31.76%</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>₹30.935 T</td>
+            <td>13.07%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>₹27.359 T</td>
+            <td>37%</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>₹19.970 T</td>
+            <td>50.01%</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>₹13.312 T</td>
+            <td>50.23%</td>
+          </tr>
+          <tr>
+            <td>2009</td>
+            <td>₹8.861 T</td>
+            <td>142.61%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>₹3.652 T</td>
+            <td>-46.52%</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>₹6.830 T</td>
+            <td>111.31%</td>
+          </tr>
+          <tr>
+            <td>2006</td>
+            <td>₹3.232 T</td>
+            <td>18.16%</td>
+          </tr>
+          <tr>
+            <td>2005</td>
+            <td>₹2.735 T</td>
+            <td>142.45%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>₹1.128 T</td>
+            <td>214.47%</td>
+          </tr>
+          <tr>
+            <td>2003</td>
+            <td>₹358.79 B</td>
+            <td>44.93%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>₹247.56 B</td>
+            <td>-33.53%</td>
+          </tr>
+          <tr>
+            <td>2001</td>
+            <td>₹372.44 B</td>
+            <td>55.35%</td>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>₹239.74 B</td>
+            <td>-66.73%</td>
+          </tr>
+          <tr>
+            <td>1999</td>
+            <td>₹720.62 B</td>
+            <td>205.85%</td>
+          </tr>
+          <tr>
+            <td>1998</td>
+            <td>₹235.61 B</td>
+            <td>256.72%</td>
+          </tr>
+          <tr>
+            <td>1997</td>
+            <td>₹66.04 B</td>
+            <td>-29.36%</td>
+          </tr>
+          <tr>
+            <td>1996</td>
+            <td>₹93.50 B</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <h2 class="mt-16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Day market according to different sources
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On <b>Mar 26th,2025</b> the market cap of Apple was reported to be:
+      </h2>
+
+      <h3><b> ₹285.062 Trillion</b> by Nasdaq</h3>
+      <h3><b> ₹285.063 Trillion</b> by CompaniesMarketCap</h3>
+      <h3><b> ₹285.063 Trillion</b> by Yahoo Finance</h3>
+
+      <h2><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Market capitalization for similer companies or competitors</b></h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Marketcap</th>
+            <th>Market cap differnce</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MICROSOFT</td>
+            <td>₹248.910 T</td>
+            <td>-13.22%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>₹2.311 T</td>
+            <td>-99.19%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>ALPHABET (GOOGLE)</td>
+            <td>₹172.504 T</td>
+            <td>-39.86%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>AMAZON</td>
+            <td>₹184.364 T</td>
+            <td>-35.73%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>NETFLIX</td>
+            <td>₹36.034 T</td>
+            <td>-87.44%</td>
+            <td>USA</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="download-area">
+        <button id="downloadBtn" class="download-btn">Download</button>
+      </div>
+    </section>
+
+
+    <!-- Revenue -->
+
+    <section id="Revenue" class="card tab-section hidden">
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <!-- Left -->
+          <div class="hero-left">
+            <img class="apple" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple">
+            <div class="name">
+              <div class="title">Apple</div>
+              <div class="ticker">AAPL ⭐</div>
+              <div class="chips">
+                <span class="chip">👩‍💻 Tech</span>
+                <span class="chip">🧑‍💻 Software</span>
+                <span class="chip"> Dow Jones</span>
+                <span class="chip">💻 Tech Hardware</span>
+                <span class="chip">🔌 Electronics</span>
+                <span class="chip">🦾 AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="hero-middle">
+            <div class="hero-stat">
+              <div class="value">#1</div>
+              <div>Rank</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹18,852</div>
+              <div>Share price</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹283.203 T</div>
+              <div>Market cap</div>
+              <div class="delta-down">-0.76%</div>
+              <div>Change (1 day)</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value"> United States</div>
+              <div>Country</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">33.00%</div>
+              <div class="delta-up">Change (1 year)</div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="hero-right">
+            <b>Apple Inc.</b> is an American hardware and software developer and technology company that develops and
+            sells
+            computers, smartphones and consumer electronics as well as operating systems and application software. Apple
+            also operates internet sales portals for music, films and software.
+          </div>
+        </div>
+      </section>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Revenue for Apple (AAPL)</h2>
+      <p class="lead">
+        <strong>Revenue in 2024 (TTM):</strong>
+        <span class="highlight">₹33.328 Trillion</span>
+
+        According to <b>Apple</b>'s latest financial reports the company's current revenue (TTMℹ️) is <b>₹33.328
+          Trillion.</b> an increase over the revenue in the year 2023 that were of <b>₹32.109 Trillion.</b> The revenue
+        is the total amount of income that a company generates by the sale of goods or services. Unlike with the
+        earnings no expenses are subtracted.
+
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Revenue history for Apple from 1996 to 2024</h2>
+      <img src="./src/assets/revenue.png" alt="Revenue Graph" class="tab-img">
+      </p>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Annual revenue</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Revenue</th>
+            <th>Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</td>
+            <td>₹33.950 T</td>
+            <td>5.73%</td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>₹32.109 T</td>
+            <td>0.13%</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>₹32.068 T</td>
+            <td>13.88%</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>₹28.259 T</td>
+            <td>30.9%</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>₹21.511 T</td>
+            <td>12.69%</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>₹19.088 T</td>
+            <td>4.35%</td>
+          </tr>
+          <tr>
+            <td>2018</td>
+            <td>₹18.292 T</td>
+            <td>19.78%</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>₹15.271 T</td>
+            <td>3.03%</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>₹14.822 T</td>
+            <td>-5.08%</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>₹15.616 T</td>
+            <td>23.32%</td>
+          </tr>
+          <tr>
+            <td>2014</td>
+            <td>₹12.662 T</td>
+            <td>17.8%</td>
+
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>₹10.709 T</td>
+            <td>19.21%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>₹9.017 T</td>
+            <td>33.33%</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>₹6.762 T</td>
+            <td>97.84%</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>₹3.418 T</td>
+            <td>66.03%</td>
+          </tr>
+          <tr>
+            <td>2009</td>
+            <td>₹2.058 T</td>
+            <td>23.26%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>₹1.670 T</td>
+            <td>60.61%</td>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>₹1.039 T</td>
+            <td>13.54%</td>
+          </tr>
+          <tr>
+            <td>2006</td>
+            <td>₹915.96 B</td>
+            <td>25.72%</td>
+          </tr>
+          <tr>
+            <td>2005</td>
+            <td>₹728.55 B</td>
+            <td>72.31%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>₹422.81 B</td>
+            <td>37.76%</td>
+          </tr>
+          <tr>
+            <td>2003</td>
+            <td>₹306.91 B</td>
+            <td>9.61%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>₹280.00 B</td>
+            <td>1.26%</td>
+          </tr>
+          <tr>
+            <td>2001</td>
+            <td>₹276.52 B</td>
+            <td>-10.86%</td>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>₹310.22 B</td>
+            <td>5.45%</td>
+          </tr>
+          <tr>
+            <td>1999</td>
+            <td>₹294.18 B</td>
+            <td>13.92%</td>
+          </tr>
+          <tr>
+            <td>1998</td>
+            <td>₹258.22 B</td>
+            <td>0.62%</td>
+          </tr>
+          <tr>
+            <td>1997</td>
+            <td>₹256.62 B</td>
+            <td>-19.01%</td>
+          </tr>
+          <tr>
+            <td>1996</td>
+            <td>₹316.86 B</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="mt-16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Revenue for similar companies or competitors
+      </h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Revenue</th>
+            <th>Revenue differnce</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> MICROSOFT</td>
+            <td>₹22.388 T</td>
+            <td>-33.85%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>₹4.607 T</td>
+            <td>-86.39%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>APLPHABET(GOOGLE)</td>
+            <td>₹29.932 T</td>
+            <td>-11.56%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>AMAZON</td>
+            <td>₹54.556 T</td>
+            <td>61.203%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>NETFLIX</td>
+            <td>₹3.335 T</td>
+            <td>-90.15%</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Price History -->
+    <section id="PriceHistory" class="card tab-section hidden">
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <!-- Left -->
+          <div class="hero-left">
+            <img class="apple" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple">
+            <div class="name">
+              <div class="title">Apple</div>
+              <div class="ticker">AAPL ⭐</div>
+              <div class="chips">
+                <span class="chip">👩‍💻 Tech</span>
+                <span class="chip">🧑‍💻 Software</span>
+                <span class="chip"> Dow Jones</span>
+                <span class="chip">💻 Tech Hardware</span>
+                <span class="chip">🔌 Electronics</span>
+                <span class="chip">🦾 AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="hero-middle">
+            <div class="hero-stat">
+              <div class="value">#1</div>
+              <div>Rank</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹18,927</div>
+              <div>Share price</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹284.320 T</div>
+              <div>Market cap</div>
+              <div class="delta-down">-0.36%</div>
+              <div>Change (1 day)</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value"> United States</div>
+              <div>Country</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">33.53%</div>
+              <div class="delta-up">Change (1 year)</div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="hero-right">
+            <b>Apple Inc.</b> is an American hardware and software developer and technology company that develops and
+            sells
+            computers, smartphones and consumer electronics as well as operating systems and application software. Apple
+            also operates internet sales portals for music, films and software.
+          </div>
+        </div>
+      </section>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock price history for Apple(AAPL)</h2>
+      <p>Highest end of day price:₹22,151 INR on 2024-12-26 </p>
+      <p>Lowest end of day price:₹4.20 INR on 1982-07-08</p>
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock price history of Apple from 1980 to 2025</h2>
+      <img src="./src/assets/price-history.png" alt="Price History Graph" class="tab-img">
+      <h2 class="mt-16">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock price for similar companies or competitors</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Stock price</th>
+            <th>Change 1d%</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> MICROSOFT</td>
+            <td>₹32,173</td>
+            <td>0.22%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>HP</td>
+            <td>₹2,361</td>
+            <td>-0.31%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>APLPHABET(GOOGLE)</td>
+            <td>₹13,465</td>
+            <td>0.78%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>AMAZON</td>
+            <td>₹16,309</td>
+            <td>0.24%</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>NETFLIX</td>
+            <td>₹79,622</td>
+            <td>-0.16%</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- P/S Ratio -->
+    <section id="PSRatio" class="card tab-section hidden">
+      <!-- ===== Hero ===== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <!-- Left -->
+          <div class="hero-left">
+            <img class="apple" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple">
+            <div class="name">
+              <div class="title">Apple</div>
+              <div class="ticker">AAPL ⭐</div>
+              <div class="chips">
+                <span class="chip">👩‍💻 Tech</span>
+                <span class="chip">🧑‍💻 Software</span>
+                <span class="chip"> Dow Jones</span>
+                <span class="chip">💻 Tech Hardware</span>
+                <span class="chip">🔌 Electronics</span>
+                <span class="chip">🦾 AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle -->
+          <div class="hero-middle">
+            <div class="hero-stat">
+              <div class="value">#1</div>
+              <div>Rank</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹19,012</div>
+              <div>Share price</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">₹286.605 T</div>
+              <div>Market cap</div>
+              <div class="delta-down">0.09%</div>
+              <div>Change (1 day)</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value">United States</div>
+              <div>Country</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value mono">34.13%</div>
+              <div class="delta-up">Change (1 year)</div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="hero-right">
+            <b>Apple Inc.</b> is an American hardware and software developer and technology company that develops and
+            sells
+            computers, smartphones and consumer electronics as well as operating systems and application software. Apple
+            also operates internet sales portals for music, films and software.
+          </div>
+        </div>
+      </section>
+      <div class="table-section">
+        <table class="table">
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P/S ratio for Apple(AAPL)</h2>
+          <p class="lead">
+            <strong>P/S ratio as of April 2025 (TTM):</strong>
+            <span class="highlight">8.43</span>
+          <p>According to <b>Apple</b>'s latest financial reports and stock price the company's current price-to-sales
+            ratio (TTM) is <b>50.0</b>. At the end of 2024 the company had a P/S ratio of <b>9.76.</b></p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P/S ratio history for Apple from 2001 to 2004</h2>
+          <img src="./src/assets/ps-ratio.png" alt="P/S Ratio Graph" class="tab-img">
+          <h3>PS ratio at the end of each year</h3>
+
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>P/S ratio</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024</td>
+              <td>9.76</td>
+              <td>25.75%</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>7.76</td>
+              <td>45.56%</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>5.33</td>
+              <td>-30.46%</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>7.67</td>
+              <td>-0%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>7.67</td>
+              <td>59.45%</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>4.81</td>
+              <td>68.67%</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>2.85</td>
+              <td>-20.77%</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>3.60</td>
+              <td>28.92%</td>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>2.79</td>
+              <td>12.41%</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>2.48</td>
+              <td>-22.84%</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>3.22</td>
+              <td>11.84%</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>2.88</td>
+              <td>-5.15%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>3.03</td>
+              <td>2.75%</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>2.95</td>
+              <td>-24.18%</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>3.89</td>
+              <td>-9.52%</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>4.30</td>
+              <td>96.82%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>2.19</td>
+              <td>-66.7%</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>6.57</td>
+              <td>86.11%</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>3.53</td>
+              <td>-6.02%</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>3.75</td>
+              <td>40.71%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>2.67</td>
+              <td>128.27%</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>1.17</td>
+              <td>32.22%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>0.8841</td>
+              <td>-34.36%</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>1.35</td>
+            </tr>
+          </tbody>
+
+        </table>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P/S ratio for similer companies or competitors</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>P/S ratio</th>
+              <th>P/S ratio differnce</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> MICROSOFT</td>
+              <td>10.7</td>
+              <td>26.42%</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>HP</td>
+              <td>0.4845</td>
+              <td>-94.25%</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>APLPHABET(GOOGLE)</td>
+              <td>5.41</td>
+              <td>-35.83%</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>AMAZON</td>
+              <td>3.16</td>
+              <td>-62.51%</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>NETFLIX</td>
+              <td>10.2</td>
+              <td>21.31%</td>
+              <td>USA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="more" class="card tab-section hidden">
+      <h2>Additional Insights</h2>
+      <div id="more-content"><em>Select an option from More…</em></div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <h3>What is the market capitalization of a company?</h3>
+      <p>The market capitalization sometimes referred as Marketcap, is the value of a publicly listed company.
+        <br> In most cases it can be easily calculated by multiplying the share price with the amount of outstanding
+        shares.
+      </p>
+      <h3>DISCLAIMER</h3>
+      <p>
+        UpToSkills is not associated in any way with __WebsiteName__.com
+        <br> Stock prices are delayed, the delay can range from a few minutes to several hours.
+      </p>
+      <div class="links">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <p>:For inquiries or if you want to report a problem write to UpToSkills.com</p>
+      </div>
+      <div>© 2025 UpToSkills.com</div>
+    </div>
+  </footer>
+
+  <!-- ===== Libraries ===== -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script src="./src/components/Front_page.jsx" type="module"></script>
+
+</body>
+</html>
