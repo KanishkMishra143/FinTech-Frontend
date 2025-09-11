@@ -5,12 +5,16 @@
 const fs = require('fs');
 const https = require('https');
 const { parse } = require('csv-parse/sync');
+const client = require('./databasepg');
 
 // ...existing code...
 
 // Read company list
 const companyCsv = fs.readFileSync('companylist.csv', 'utf8');
 const companies = parse(companyCsv, { columns: true });
+
+// Set the limit for number of companies to process
+const LIMIT = 100; // Change this value as needed
 
 // Read all symbols
 const symbols = JSON.parse(fs.readFileSync('symbols.json'));
@@ -48,30 +52,35 @@ function fetchMarketCap(symbol) {
   });
 }
 
+
 (async () => {
-  let results = [];
+  await client.connect();
   let unmatched = [];
-  for (const company of companies) {
+  for (const company of companies.slice(0, LIMIT)) {
     const symbol = findSymbol(company.name);
     let marketCap = null;
     if (symbol) {
       marketCap = await fetchMarketCap(symbol);
+      // Upsert logic: avoids duplicate entries for same symbol/date
+      const today = new Date().toISOString().slice(0, 10);
+      await client.query(
+        `INSERT INTO company_metrics (symbol, shareprice, marketcap, date)
+         VALUES ($1, $2, $3, $4)
+         ON CONFLICT (symbol, date) DO UPDATE
+         SET shareprice = EXCLUDED.shareprice, marketcap = EXCLUDED.marketcap`,
+        [symbol, null, marketCap, today]
+      );
+      console.log(`Imported/Updated: ${company.name} | Symbol: ${symbol} | MarketCap: ${marketCap || 'N/A'}`);
     } else {
       unmatched.push(company.name);
+      console.log(`Unmatched: ${company.name}`);
     }
-    results.push({
-      company_id: company.company_id,
-      name: company.name,
-      symbol: symbol || '',
-      marketCap: marketCap
-    });
-    console.log(`Processed: ${company.name} | Symbol: ${symbol || 'N/A'} | MarketCap: ${marketCap || 'N/A'}`);
     await new Promise(r => setTimeout(r, 1100));
   }
-  fs.writeFileSync('allcompanies.json', JSON.stringify(results, null, 2));
+  await client.end();
   if (unmatched.length > 0) {
     fs.writeFileSync('unmatched_companies.txt', unmatched.join('\n'));
     console.log(`Unmatched companies saved to unmatched_companies.txt (${unmatched.length})`);
   }
-  console.log('Saved all company metrics to allcompanies.json');
+  console.log('All company metrics imported to database.');
 })();
